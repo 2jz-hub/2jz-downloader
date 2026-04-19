@@ -2,7 +2,8 @@ import chalk from 'chalk';
 import { createRequire } from 'module';
 import type { Platform, Mode } from '../core/platform.js';
 
-const _version = '1.5.8';
+// @ts-ignore
+const _version = typeof APP_VERSION !== 'undefined' ? APP_VERSION : 'dev';
 
 // -- Brand ------------------------------------------------------------------
 export const BRAND = {

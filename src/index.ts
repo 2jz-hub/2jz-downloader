@@ -55,8 +55,9 @@ process.on('SIGINT', () => {
   process.exit(0);
 });
 
-// Version is managed by release script
-const version = '1.5.8';
+// Injected at build time via tsup --define
+// @ts-ignore
+const version = typeof APP_VERSION !== 'undefined' ? APP_VERSION : 'dev';
 
 // -- CLI definition -------------------------------------------------------
 program

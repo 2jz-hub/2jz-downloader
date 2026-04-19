@@ -1,0 +1,19 @@
+# Source (compiled to dist/)
+src/
+
+# Tests
+test/
+
+# Dev config
+tsconfig.json
+.gitignore
+.npmignore
+
+# IDE / OS
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# node_modules is always excluded by npm, listed for clarity
+node_modules/

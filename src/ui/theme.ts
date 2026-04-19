@@ -2,7 +2,7 @@ import chalk from 'chalk';
 import { createRequire } from 'module';
 import type { Platform, Mode } from '../core/platform.js';
 
-const _version = '1.5.7';
+const _version = '1.5.8';
 
 // -- Brand ------------------------------------------------------------------
 export const BRAND = {
